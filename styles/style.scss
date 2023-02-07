@@ -1,0 +1,1032 @@
+@font-face {
+    font-family: 'Mrs Saint Delafield';
+    src: local('Mrs Saint Delafield'), local('MrsSaintDelafield-Regular'),
+    url(fonts/MrsSaintDelafield-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: local('Neue Haas Unica Medium'), local('NeueHaasUnica-Medium'),
+    url(fonts/NeueHaasUnica-Medium.ttf)  format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica';
+    src: local('Neue Haas Unica Regular'), local('NeueHaasUnica-Regular'),
+    url(fonts/NeueHaasUnica-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+
+
+
+
+  .header-menu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin: auto;
+   gap: 10px;
+
+   &__item__hidden {
+    display: none;
+  }
+
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 0px;
+    &__title {
+      font-size: 26px;
+padding-top: 300px;
+text-align: center;
+    }
+    &__subtitle {
+      font-size: 30px;
+  }
+  &__text {
+  font-size: 10px;
+  }
+   }
+
+
+  .menuBlock {
+    width: 90%;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 24px;
+    line-height: 24px;
+    margin: 3% 0 2% 0;
+  }
+
+  .menuTabs {
+    height: 59px;
+  }
+
+  .menuContent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 0;
+    padding: 2%;
+  }
+
+  .menuCard {
+    grid-gap: 5px;
+  }
+
+  .screen-4add {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 700px;
+  }
+
+  .videoCover__img1 {
+    width: 100vw;
+  }
+
+  .videoCover__img2 {
+    top: 60px;
+    left: 128px;
+  }
+
+  .videoCover__img3 {
+    top: 107px;
+    left: 180px;
+  }
+
+  .videoCover__img4 {
+    display: none;
+  }
+
+  .videoCard {
+    padding-left: 20px;
+  }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+  .header-menu {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   margin: auto;
+   gap: 20px;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 0px;
+    &__title {
+      font-size: 20px;
+padding-top: 400px;
+text-align: center;
+    }
+    &__subtitle {
+      font-size: 10px;
+  }
+  &__text {
+  font-size: 10px;
+  }
+   }
+
+
+
+  .menuBlock {
+    width: 90%;
+    height: 100%;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 40px;
+    margin: 3% 0 2% 0;
+  }
+
+  .menu {
+    padding: 0
+  }
+
+  .menuTabs {
+    height: 79px;
+    padding: 0 5% 0 5%;
+  }
+
+  .menuTabs__title-active {
+    border-bottom: 3px solid #00D664;
+    color: #1E266D;
+  }
+
+  .menuContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 6%;
+    padding: 5%;
+  }
+
+  .menuCard {
+    grid-gap: 5px;
+  }
+
+  .screen-4add {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 1000px;
+  }
+
+  .videoCard {
+    padding-left: 140px;
+  }
+
+  .videoCard__title {
+    width: 75%;
+  }
+
+  .videoCard__text {
+    width: 75%;
+  }
+
+  .videoCover__img2 {
+    top: 150px;
+    left: 233px;
+  }
+
+  .videoCover__img3 {
+    top: 197px;
+    left: 285px;
+  }
+
+  .videoCover__img4 {
+    position: absolute;
+    top: 315px;
+    left: 406px;
+    z-index: 10;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+
+
+
+  .menuBlock {
+    width: 70%;
+    height: 100%;
+    margin: auto;
+  }
+
+  .title {
+    font-size: 34px;
+    line-height: 44px;
+    margin: 10% 0 5% 0;
+  }
+
+  .menu {
+    padding: 0 10% 5% 10%;
+  }
+
+  .menuTabs {
+    height: 79px;
+    padding: 0 20% 0 20%;
+  }
+
+  .menuTabs__title-active {
+    border-bottom: 3px solid #00D664;
+    color: #1E266D;
+  }
+
+  .menuContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 6%;
+    padding: 5%;
+  }
+
+  .menuCard {
+    grid-gap: 10px;
+  }
+
+  .menuCard__title::after {
+    border-bottom: 1px dashed rgba(105, 105, 105, 0.6);
+    content: '';
+    flex-grow: 1;
+  }
+
+  .screen-4add {
+    grid-template-columns: 1fr 1fr;
+    height: 622px;
+  }
+
+  .videoCard__title {
+    width: 60%;
+  }
+
+  .videoCard__text {
+    width: 60%;
+  }
+
+  .videoCover__img2 {
+    top: 150px;
+    left: 233px;
+  }
+
+  .videoCover__img3 {
+    top: 197px;
+    left: 285px;
+  }
+
+  .videoCover__img4 {
+    position: absolute;
+    top: 315px;
+    left: 406px;
+    z-index: 10;
+  }
+
+}
+
+@media screen and (max-width: 768px){
+
+  .about__header_h1{
+    margin: 8% auto auto auto;
+  }
+  .about__header_h2{
+    max-width: 70%;
+    margin: auto;
+  }
+  .about__container{
+    grid-template-rows: auto;
+    grid-template-columns: auto;
+  }
+  .about__h1{
+    margin: 2%;
+  }
+  .about{
+    margin: auto;
+    gap: 15%;
+  }
+  .about__picture{
+    display: grid;
+    max-height: 30%;
+    margin: 20% auto 20% 8%;
+
+  }
+
+}
+@media screen and (max-width: 399px){
+
+  .header-menu {
+    flex-direction: column;
+   margin: auto;
+   gap: 10px;
+   &__item {
+   display: none;
+   }
+
+  }
+
+  .about__header_h1{
+    font-size: 30px;
+  }
+  .about__header_h2 {
+    max-width: 30%;
+    margin: auto;
+    font-size: 30px;
+    line-height: 48px;
+  }
+  .about__h1{line-height: 100%;
+    margin: 8%;
+  }
+  .about{
+    margin: 5% 1% 1% 10%;
+    gap: 10%;
+  }
+  .about__picture{
+    max-height: 10%;
+    margin: 20% auto 20% 8%;
+    max-width: 10%;
+  }
+}
+@media screen and (max-width: 1200px){
+  .about__container {
+    grid-template-columns: 50% 50%;
+}
+.about{
+  gap: 4%;
+  padding: 10px;
+  grid-row-gap: 35px;}
+}
+
+.screen-4 {
+  background: url("../images/menu_bg.png");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+
+.title {
+  font-family: 'Neue Haas Unica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #FFFFFF;
+  text-align: center;
+
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-bottom: 10%;
+}
+
+.menuTabs {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgba(105, 105, 105, 0.2);
+
+}
+
+.menuTabs__title {
+  font-family: 'Neue Haas Unica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #777777;;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuCard {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 'menuCard__img menuCard__title menuCard__price'
+                                 'menuCard__img menuCard__comment menuCard__price';
+}
+
+.menuCard__img {
+  grid-area: menuCard__img;
+}
+
+.menuCard__title {
+  grid-area: menuCard__title;
+  font-family: 'Neue Haas Unica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #1E266D;
+  padding-top: 3px;
+  display: flex;
+}
+
+.menuCard__comment {
+  grid-area: menuCard__comment;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #696969;
+}
+
+.menuCard__price {
+  grid-area: menuCard__price;
+  font-family: 'Neue Haas Unica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #121212;
+}
+
+.screen-4add {
+  display: grid;
+  background: #F5F6FE;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.videoCover {
+  position: absolute;
+}
+
+.videoCover__img1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.videoCover__img2 {
+  position: absolute;
+  z-index: 30;
+}
+
+.videoCover__img3 {
+  position: absolute;
+  z-index: 40;
+}
+
+.videoCard {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.videoCard__title {
+  font-family: 'Neue Haas Unica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: -0.01em;
+  color: #1E266D;
+}
+
+.videoCard__text {
+  font-family: 'Neue Haas Unica', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  color: #7C7C7C;
+  margin: 5% 0 5% 0;
+}
+
+.buttonIcon {
+  font-family: 'Neue Haas Unica', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 25px;
+  gap: 20px;
+  background: #00D664;
+  border-radius: 30px;
+  border-width: 0;
+}
+
+
+.header {
+    position: absolute;
+    width: 100%;
+
+}
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px;
+    align-items: center;
+    &__logo {
+color: #FFFFFF;
+font-family: 'Neue Haas Unica';
+font-weight: 900;
+font-size: 22px;
+line-height: 17px;
+    }
+    &__item {
+      position: relative;
+        cursor: pointer;
+        font-family: 'Neue Haas Unica';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 17px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        &::after {
+          right: -15px;
+           content: url(../images/arrowicon.svg);
+           position: absolute;
+          }
+
+     }
+
+    &__button {
+      cursor: pointer;
+    font-family: 'Neue Haas Unica', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    display: flex;
+    padding: 14px 25px;
+    gap: 20px;
+    background: #00D664;
+    border-radius: 30px;
+    border-width: 0;
+    }
+    &__icon1 {
+      cursor: pointer;
+      height: 14.97px;
+      width: 14.97px;
+      color: #FFFFFF;
+    }
+    &__icon {
+      cursor: pointer;
+    }
+  }
+
+  li {
+    list-style-type: none;
+   }
+
+   .screen-1 {
+
+    display: flex;
+    background: url("../images/header_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+
+    justify-content: center;
+   }
+
+   .article {
+
+    flex-direction: column;
+    min-height: 1085px;
+    padding: 0 80px 100px;
+    color: white;
+    box-sizing: border-box;
+    margin-top: 300px;
+    text-align: center;
+
+
+
+&__title {
+    font-family: 'Mrs Saint Delafield', sans-serif;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 17px;
+    margin: auto;
+
+
+}
+&__subtitle {
+    font-family: 'Neue Haas Unica';
+font-weight: 500;
+font-size: 60px;
+line-height: 70px;
+letter-spacing: 0.02em;
+
+
+}
+&__text {
+    font-family: 'Neue Haas Unica';
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+
+}
+
+&__button {
+
+  cursor: pointer;
+    font-family: 'Neue Haas Unica', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    padding: 14px 25px;
+    gap: 10px;
+    background: #00D664;
+    border-radius: 30px;
+    border-width: 0;
+    margin-top: 30px;
+
+
+}
+   }
+
+   .screen-5 {
+
+    background-color: #F5F5F5;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+    }
+
+    .onlineStore {
+
+        margin: auto;
+
+    }
+
+    .onlineMenuTitle {
+
+        font-family: 'Neue Haas Unica', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        size: 34px;
+        line-height: 44px;
+        align-self: center;
+        color: #1E266D;
+        text-align: center;
+        padding: 5%;
+
+        width: 1064px;
+        height: 50px;
+        left: 428px;
+        top: 4702px;
+
+    }
+
+    .onlineMenu {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: 1fr 1fr;
+        grid-gap: 2%;
+
+    }
+
+    .onlineMenuCard_title {
+
+        font-family: 'Neue Haas Unica', sans-serif;
+        color: #1E266D;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0,01em;
+        padding: 3%;
+
+    }
+
+    .onlineMenuCard_price {
+
+        font-family:  'Neue Haas Unica', sans-serif;
+        color: #696969;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
+        padding: 3%;
+
+    }
+
+    .button1 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 14px 25px;
+        gap: 10px;
+
+        background-color: #00D664;
+        border-radius: 30px;
+        border: #00D664;
+
+        width: 173.15px;
+        height: 55px;
+        left: 879px;
+        top: 5703px;
+
+        font-family: 'Neue Haas Unica', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 27px;
+        color: #FFFFFF;
+
+        margin: auto;
+
+    }
+    /*footer*/
+    .screen-7 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #FFFFFF;
+      }
+
+      .map {
+        position: absolute;
+        width: 100%;
+        height: 75%;
+        margin: auto;
+      }
+
+      .ft_textmenu {
+        position: absolute;
+        margin: 5% 0 0 10%;
+
+        font: normal 500 16px 16px 'Roboto';
+        line-height: 16px;
+        letter-spacing: 0.01em;
+        color: #696969;
+      }
+
+      .footer-social {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 90%;
+        top: 85%;
+      }
+
+      .inst {
+        margin-left: 50%;
+      }
+
+      .twit {
+        margin-left: 60%;
+      }
+
+      .line1 {
+        position: absolute;
+        width: 93%;
+        height: 0px;
+        left: 5%;
+        top: 89%;
+        border: 1px solid rgba(54, 51, 69, 0.1);
+      }
+
+      .ft-menu {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        margin-top: 8%;
+        margin-left: 4%;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 30px;
+        letter-spacing: -0.04em;
+
+        color: #696969;
+      }
+
+      .ft-contact{
+        margin-left: 40%;
+      }
+
+
+      .footer-list_text {
+        position: absolute;
+        width: 168px;
+        height: 68px;
+        left: 80%;
+        top: 100%;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: right;
+        letter-spacing: 0.01em;
+        color: #696969;
+      }
+
+      .line {
+        position: absolute;
+        width: 93%;
+        height: 0px;
+        left: 5%;
+        top: 4600px;
+        /*из-за пикселей съезжает, в % не получается задать нужную высоту*/
+        border: 1px solid rgba(54, 51, 69, 0.1);
+      }
+
+      .ft-text {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #696969;
+      }
+
+      .ft-text_1 {
+        position: absolute;
+        top: 4600px;
+        /*из-за пикселей съезжает, в % не получается задать нужную высоту*/
+        width: 287px;
+        height: 24px;
+        left: 6%;
+      }
+
+      .ft-text_2 {
+        position: absolute;
+        top: 4600px;
+        /*из-за пикселей съезжает, в % не получается задать нужную высоту*/
+        width: 198px;
+        height: 24px;
+        left: 60%;
+      }
+/*# sourceMappingURL=style.css.map */
+
+
+.screen-2{
+  display: grid;
+}
+.about__header{
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 1fr;
+  align-items: center;
+  text-align: center;
+
+}
+.about__header_h1{
+  font-family: Mrs Saint Delafield;
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #ACACAC;
+  margin: 3% auto auto auto;
+
+}
+.about__header_h2{
+  font-family: 'Neue Haas Unica';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 138%;
+  text-align: center;
+  color: #1E266D;
+}
+.about__header_text{
+  font-family: 'Neue Haas Unica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #696969;
+  padding: 2%;
+  width: 50vw;
+  margin: auto;
+
+}
+.about__h1{
+
+  font-family: 'Neue Haas Unica';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 129%;
+  color: #1E266D;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.about__text-header{
+  font-family: 'Neue Haas Unica';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 220%;
+  color: #1E266D;
+}
+.about__text-list{
+  font-family: 'Neue Haas Unica';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: -0.01em;
+  color: #696969;
+
+}
+.about__container{
+  display: grid;
+  grid-template-rows: 70vw;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  justify-content: center;
+}
+.about{
+  display: grid;
+  grid-template-rows: 10% 10% 5% 10% 5% 10% 5%;
+  grid-template-columns:15% 1fr;
+  width: 75%;
+  height: 70%;
+  align-items: center;
+}
+.about__h1{
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.about__icon-shrimp{
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.about__text-header1{
+  grid-column: 2/3;
+  grid-row:2/3;
+}
+.about__text1{
+  grid-column:2/3;
+  grid-row:3/4;
+}
+.about__icon-pepper{
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+.about__text-header2{
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+.about__icon-pan{
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+.about__text-header3{
+  grid-column: 2/3;
+  grid-row: 6/7;
+}
+.about__text2{
+  grid-column: 2/3;
+  grid-row: 5/6;
+
+}
+.about__text3{
+  grid-column: 2/3;
+  grid-row: 7/8;
+}
